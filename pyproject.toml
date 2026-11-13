@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "pysh_pythoner"
-version = "0.1.0"
+version = "0.1.2"
 authors = [{ name = "Cade", email = "cadey.matignas@gmail.com" }]
 description = 'pysh plugin for "A custom python REPL"'
 readme = "README.md"
@@ -14,11 +14,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-dependencies = ["pythoner>=0.1.0"]
+dependencies = ["pythoner>=0.1.0", "tomlkit>=0.1.0"]
 
 [project.urls]
 Homepage = "https://github.com/coolguy038/pysh-pythoner"
 
 
 [project.scripts]
-pysh-pythoner = "pysh-pythoner.cli:main"
+pysh-pythoner = "pysh_pythoner.cli:main"
