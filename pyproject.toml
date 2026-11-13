@@ -1,17 +1,17 @@
 [build-system]
-requires = ["uv_build>=0.12.21,<0.13"]
+requires = ["uv_build>=0.12.21,<0.14"]
 build-backend = "uv_build"
 
 [project]
-name = "pysh-pythoner"
+name = "pysh_pythoner"
 version = "0.1.0"
 authors = [{ name = "Cade", email = "cadey.matignas@gmail.com" }]
 description = 'pysh plugin for "A custom python REPL"'
 readme = "README.md"
 requires-python = ">=3.8"
+license = "MIT"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = ["pythoner>=0.1.0"]
