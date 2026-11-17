@@ -13,7 +13,7 @@ def main():
 		pysh["plugins"] = tomlkit.table()
 
 	pysh["plugins"]["python_as_pythoner"] = (
-		"if command == 'python':\n  subprocess.run('pythoner', stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)"
+		"if command == 'python':\n	subprocess.run('pythoner', stdin=sys.stdin, stdout=sys.stdout, stderr=sys.stderr)\n	break"
 	)
 
 	with open(config_path, "w", encoding="utf-8") as f:
